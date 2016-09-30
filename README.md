@@ -13,5 +13,8 @@ p=x^2 +y^2, p = x^2 + y^2 with x and y integers, if and only if   p \equiv 1 \pm
 [hermite-serret.py](https://github.com/macbuse/just-math/blob/master/hermite-serret.py)
 calculates x, y so that x^2 + y^2 = p for prime p = 1 mod 4 
 
+Use this for example to see non real primes in the gaussian integers
+![gaussian primes](https://github.com/macbuse/just-math/blob/master/gaussian_primes.png)
+
 
 
