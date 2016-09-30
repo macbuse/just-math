@@ -4,7 +4,7 @@ This is odds and ends of code I wrote for diverse math problems:
 
 ##Convex sets in high dimensions
 
-*In mathematics, in the theory of Banach spaces, **Dvoretzky's theorem** is an important structural theorem proved by Aryeh Dvoretzky in the early 1960s.[1] It answered a question of Alexander Grothendieck. A new proof found by Vitali Milman in the 1970s[2] was one of the starting points for the development of asymptotic geometric analysis (also called asymptotic functional analysis or the local theory of Banach spaces).*
+*In mathematics, in the theory of Banach spaces, Dvoretzky's theorem is an important structural theorem proved by Aryeh Dvoretzky in the early 1960s.[1] It answered a question of Alexander Grothendieck. A new proof found by Vitali Milman in the 1970s[2] was one of the starting points for the development of asymptotic geometric analysis (also called asymptotic functional analysis or the local theory of Banach spaces).*
 
 [Source: wiki] (https://en.wikipedia.org/wiki/Dvoretzky%27s_theorem)
 
