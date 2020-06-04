@@ -88,7 +88,7 @@ if __name__ == '__main__':
     # voices key is one of M, K, O
     #percentage$...$ for resizing TeX fonts
     pp_audio = re.compile(r'!!\[(.*?)\]\((.*?)\)',re.DOTALL)
-    pp_math =  re.compile(r'(\d+)(\$.*\$)',re.DOTALL)
+    pp_math =  re.compile(r'(\d+)(\$.*?\$)',re.DOTALL)
     
     def audio_cb(match):
         wrapper = '<audio  data-autoplay ><source src="{}" ></audio>'
@@ -101,12 +101,15 @@ if __name__ == '__main__':
     #make the html first as it is local
     xx = re.sub(pp_audio, audio_cb, md)
     md_with_tags = re.sub(pp_math, math_cb, xx)
+
+    print(pp_math.findall(xx))
     
     with open('tmp.md','w') as fp:
         fp.write(md_with_tags)
         
     #split this (past col 80) so that we can replace for -o later if we want
     pandoc_it = 'pandoc -t revealjs -s -o slides.html tmp.md -V revealjs-url=https://unpkg.com/reveal.js@3.9.2/ -i'.split()
+    pandoc_it.append('--mathjax')
     
     subprocess.call(pandoc_it)
     
